@@ -1,5 +1,6 @@
 package ar.edu.utn.frba.tadp.entes;
 
+@Articulo("una")
 public class Persona implements Nombrable{
 		
 	private String nombre;
@@ -13,6 +14,11 @@ public class Persona implements Nombrable{
 	
 	public Persona() {
 		super();
+	}
+	
+	public Persona(String nombre) {
+		this();
+		this.nombre = nombre;
 	}
 	
 	public Persona (String nombre , Direccion direccion) {
